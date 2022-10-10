@@ -1,9 +1,16 @@
+body {
+    background-color: black;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
 .app {
     display: grid;
-    width: 300px;
+    width: 500px;
     margin: 0 auto;
     grid-template-columns: 25% 25% 25% 25%; 
-    grid-template-rows: 50px repeat(5, 30px); 
+    grid-template-rows: 50px repeat(5, 50px); 
     grid-template-areas: 
     "res res res res"
     "7 8 9 reset"
@@ -14,6 +21,11 @@
     ;
     border: 2px solid teal;
     border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 h3 {
     text-align: right;
